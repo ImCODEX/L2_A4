@@ -9,6 +9,7 @@ public class Main {
 
         System.out.println(m.min_kb(kb_prices));
         System.out.println(m.max_price(kb_prices,usb_prices));
+        System.out.println(m.max_by_budget(usb_prices, 30));
 
     }
 }

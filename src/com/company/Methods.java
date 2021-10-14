@@ -36,4 +36,21 @@ public class Methods {
 
         return max;
     }
+
+    /**
+     * Maximum with upper limit
+     * @param usb: list of prices
+     * @param budget: int aka upper limit
+     * @return: max
+     */
+    public int max_by_budget(int[] usb, int budget){
+        int max = 0;
+        for (int j : usb) {
+            if (j > max && j <= budget)
+                max = j;
+        }
+        return max;
+    }
+
+
 }
