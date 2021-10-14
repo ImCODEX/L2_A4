@@ -52,5 +52,22 @@ public class Methods {
         return max;
     }
 
+    /**
+     * Maximum with upper limit but with two arrays
+     * @param kb: list of prices
+     * @param usb: list of prices
+     * @param budget: int aka upper limit
+     * @return: max
+     */
+    public int max_consumerism(int[] kb, int[] usb, int budget){
+        int max = -1;
+        for(int i : kb){
+            for(int j : usb){
+                if(i + j <= budget && i + j > max)
+                    max = i + j;
+            }
+        }
+        return max;
+    }
 
 }
